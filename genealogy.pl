@@ -1,0 +1,16 @@
+parent(adam, john).
+parent(eve, john).
+parent(eve, lisa).
+parent(john, anne).
+parent(john, pat).
+parent(pat, jacob).
+parent(carol, jacob).
+male(adam).
+male(john).
+male(jacob).
+male(pat).
+female(eve).
+female(lisa).
+female(anne).
+female(carol).
+grandparent(GP, GC) :- parent(GP, C), parent(C, GC).
